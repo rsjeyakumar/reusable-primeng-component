@@ -1,0 +1,12 @@
+.sidebar-container{
+    border-right:1px solid #9d0b0b;
+    position:fixed;
+    width:20%;
+    height: 100%;
+}
+.main-container{
+    margin-left:16%;
+}
+.my-container{
+    margin:55px 0;
+}
