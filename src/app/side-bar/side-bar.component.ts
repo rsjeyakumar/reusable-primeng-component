@@ -19,7 +19,8 @@ export class SideBarComponent implements OnInit {
       this.sideBarData = res;
     });
   }
-  scrollToView(el) {
+  scrolltoview(el) {
+    debugger;
     // const document:HTMLElement= document.getElementsby
     el.scrollIntoView();
   }
