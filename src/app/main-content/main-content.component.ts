@@ -20,7 +20,8 @@ export class MainContentComponent implements OnInit {
   carouselItems;
   tabMenuItems;
   tableCols;
-
+  val;
+  val1;
   //data view
   cars;
 
