@@ -1,4 +1,4 @@
-<div class="row mx-auto ">
+<div class="row mx-auto" id="accordian">
     <div class="col p-3">
         <h3>Accordion</h3>
         <p-accordion>
@@ -14,14 +14,14 @@
         </p-accordion>
     </div>
 </div>
-<div class="row mx-auto ">
+<div class="row mx-auto" id="dropdown">
     <div class="col p-3">
         <h3>Dropdown</h3>
         <p-dropdown [options]="cities1" [(ngModel)]="selectedCity1" placeholder="Select a City" [showClear]="true">
         </p-dropdown>
     </div>
 </div>
-<div class="row mx-auto ">
+<div class="row mx-auto " id="litebox">
     <div class="col p-3">
         <h3>Light Box</h3>
         <p-lightbox [images]="images"></p-lightbox>
@@ -29,7 +29,7 @@
 </div>
 
 
-<div class="row mx-auto ">
+<div class="row mx-auto " id="tabmenu">
     <div class="col p-3">
         <h3>Tab Menu</h3>
         <p-tabMenu [model]="tabMenuItems"></p-tabMenu>
@@ -37,21 +37,21 @@
     </div>
 </div>
 
-<div class="row mx-auto ">
+<div class="row mx-auto " id="rating">
     <div class="col p-3">
         <h3>Rating</h3>
         <p-rating [(ngModel)]="val"></p-rating>
 
     </div>
 </div>
-<div class="row mx-auto ">
+<div class="row mx-auto " id="slider">
     <div class="col p-3">
         <h3>Slider</h3>
         <p-slider [(ngModel)]="val1" [style]="{'width':'14em'}"></p-slider>{{val1}}
     </div>
 </div>
 
-<div class="row mx-auto ">
+<div class="row mx-auto " id="carousel">
     <div class="col p-3">
         <h3>carousel</h3>
         <p-carousel [value]="carouselItems" [numVisible]="3" [numScroll]="1">
@@ -73,7 +73,7 @@
     </div>
 </div>
 
-<div class="row mx-auto ">
+<div class="row mx-auto " id="table">
     <div class="col p-3">
         <h3>Table </h3>
         <p-table [value]="carouselItems">
@@ -124,9 +124,9 @@
 </div>
 
 
-<div class="row mx-auto ">
+<div class="row mx-auto " id="dataview">
     <div class="col p-3">
-        <h3>Rating</h3>
+        <h3>Data View</h3>
         <p-dataView #dv [value]="cars" [paginator]="true" [rows]="20" paginatorPosition="both" filterBy="brand"
             [sortField]="sortField" [sortOrder]="sortOrder">
             <p-header>
@@ -201,7 +201,7 @@
     </div>
 </div>
 
-<div class="row mx-auto ">
+<div class="row mx-auto " id="charts">
     <div class="col p-3">
         <h3>Chart</h3>
 
@@ -209,9 +209,9 @@
 
     </div>
 </div>
-<div class="row mx-auto ">
+<div class="row mx-auto " id="toast">
     <div class="col p-3">
-        <h3>Rating</h3>
+        <h3>Toast</h3>
 
         <p-toast [style]="{marginTop: '80px'}"></p-toast>
 
@@ -263,9 +263,9 @@
 
     </div>
 </div>
-<div class="row mx-auto ">
+<div class="row mx-auto " id="datepicker">
     <div class="col p-3">
-        <h3>Rating</h3>
+        <h3>Calendar</h3>
         <p-calendar [(ngModel)]="date" [showIcon]="true"></p-calendar>
 
     </div>

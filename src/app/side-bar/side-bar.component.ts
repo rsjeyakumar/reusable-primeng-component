@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { DataServiceService } from "../data-service.service";
 
 @Component({
@@ -9,15 +9,19 @@ import { DataServiceService } from "../data-service.service";
 export class SideBarComponent implements OnInit {
   private sideBarData;
 
-  constructor(private data:DataServiceService) { }
+  constructor(private data: DataServiceService) { }
 
   ngOnInit() {
 
   }
-  getSideBarData(){
-    this.data.getSidebar().subscribe(res =>{
-      this.sideBarData=res;
+  getSideBarData() {
+    this.data.getSidebar().subscribe(res => {
+      this.sideBarData = res;
     });
+  }
+  scrollToView(el) {
+    // const document:HTMLElement= document.getElementsby
+    el.scrollIntoView();
   }
 
 }
